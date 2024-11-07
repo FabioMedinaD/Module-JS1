@@ -9,5 +9,7 @@ function convertToPercentage(decimalNumber) {
 
   return percentage;
 }
-
-console.log(decimalNumber);
+//Error
+//"decimalNumber" has already been declared that`s why the variable "decimalNumber"  can`t declared again.
+function convertToPercentage(decimalNumber) {
+  const percentage = `${decimalNumber * 100}%`;
