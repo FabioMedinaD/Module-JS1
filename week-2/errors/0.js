@@ -7,3 +7,8 @@ function capitalise(str) {
   let str = `${str[0].toUpperCase()}${str.slice(1)}`;
   return str;
 }
+//Error:
+//"str" has already been  declared that's why you can´t declare again the variable "str".
+function capitalise(str) {
+  str = `${str[0].toUpperCase()}${str.slice(1)}`;
+  return str;
