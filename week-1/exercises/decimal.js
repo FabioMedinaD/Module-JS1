@@ -1,5 +1,11 @@
 
 const num = 56.5467;
+const str=num.toString();
+
+const wholeNumberPart = Math.trunc(num);
+const decimalPart = str.slice(str.lastIndexOf("."))
+const roundedNum =Math.round(num);
+console.log(roundedNum);
 
 // You should look up Math functions for this exercise https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
 
