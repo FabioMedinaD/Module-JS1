@@ -15,3 +15,13 @@
 
 // Come up with a clear, simple name for the function
 // Use the string documentation to help you plan your solution
+
+function upperSnake (str) {
+var upper = str.toUpperCase();
+var snake = upper.replaceAll(" " , "_");
+return "\""+`${snake}`+"\"";
+}
+
+console.log(upperSnake("lord of the rings"));
+console.log(upperSnake("the great gatsby"));
+console.log(upperSnake("the da vinci code"));
