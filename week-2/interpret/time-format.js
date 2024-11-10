@@ -26,7 +26,7 @@ console.log(formatTimeDisplay(143));
 // Questions
 
 // a) When formatTimeDisplay is called how many times will pad be called?
-
+// 3 times
 // Call formatTimeDisplay with an input of 143, now answer the following:
 
 // b) What value is assigned to the parameter num when pad is called for the first time?
