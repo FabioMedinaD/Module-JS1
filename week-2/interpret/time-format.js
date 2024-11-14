@@ -30,14 +30,16 @@ console.log(formatTimeDisplay(143));
 // Call formatTimeDisplay with an input of 143, now answer the following:
 
 // b) What value is assigned to the parameter num when pad is called for the first time?
-
+//0
 // c) What is the return value of pad when it is called for the first time?
+//00
 
 // d) What is the value assigned to the parameter num when pad
 // is called for the last time in this program?  Explain your answer
-
+// 23, return the same number because 23 is greater than  10.
 // e) What is the return value when pad is called
 // for the last time in this program?  Explain your answer
 
 // f) Research an alternative way of padding the numbers in this code.
 // Look up the string functions on mdn
+//padStart() method is useful to pad a number with leading zeros
