@@ -33,3 +33,48 @@
 // Explanation: The fraction 3/3 is not a proper fraction because the numerator is equal to the denominator. The function should return false.
 
 // These acceptance criteria cover a range of scenarios to ensure that the isProperFraction function handles both proper and improper fractions correctly and handles potential errors such as a zero denominator.
+
+
+
+function  isProperFractio (numerator, denominator){
+    const errorr = numerator / denominator;
+    if(numerator < denominator){
+        return "true";        
+    }  else if (errorr === Infinity ){
+        return "Error";
+    } else if (numerator > denominator){
+        return "false";
+    } else if (errorr === Infinity ){
+        return "Error";
+    } else if (numerator < 0){
+        return "true";
+    } else  if(numerator === denominator) {
+        return "false";
+    }
+}
+
+let currentOutput= isProperFractio(2,3);
+let expectedOutput = "true";
+console.assert(currentOutput === expectedOutput);
+console.log(isProperFractio(2,3));
+
+let currentOutput1= isProperFractio(5,2);
+let expectedOutput1 = "false";
+console.assert(currentOutput1 === expectedOutput1);
+console.log(isProperFractio(5,2));
+
+let currentOutput2= isProperFractio(3,0);
+let expectedOutput2 = "Error";
+console.assert(currentOutput2 === expectedOutput2);
+console.log(isProperFractio(3,0));
+
+
+let currentOutput3= isProperFractio(-4,7);
+let expectedOutput3 = "true";
+console.assert(currentOutput3 === expectedOutput3);
+console.log(isProperFractio(-4,7));
+
+let currentOutput4= isProperFractio(3,3);
+let expectedOutput4 = "false";
+console.assert(currentOutput4 === expectedOutput4);
+console.log(isProperFractio(3,3));
