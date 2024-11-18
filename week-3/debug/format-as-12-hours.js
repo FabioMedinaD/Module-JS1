@@ -1,12 +1,20 @@
-function formatAs12HourClock(time) {
-  if (Number(time.slice(0, 2)) > 12) {
-    return `${Number(time.slice(0, 2)) - 12}:00 pm`;
-  }
-  return `${time} am`;
+function paddZeros(num){
+if (num<10){
+ return `0${num}`;}
+return num ;
 }
 
-const currentOutput = formatAs12HourClock("08:00");
-const targetOutput = "08:00 am";
+function formatAs12HourClock(time) {
+let hours =time.slice(0, 2);
+let minutes = time.slice(-2);
+if ( hours > 12){
+ return `${paddZeros(hours -12)}:`+`${minutes} pm`;
+}
+return `${time} am`;
+}
+
+const currentOutput = formatAs12HourClock("08:20");
+const targetOutput = "08:20 am";
 console.assert(
   currentOutput === targetOutput,
   "current output: %s, target output: %s",
@@ -22,6 +30,16 @@ console.assert(
   currentOutput2,
   targetOutput2
 );
+const currentOutput3 = formatAs12HourClock("17:42");
+const targetOutput3 = "05:42 pm";
+
+
+
+console.assert(
+  currentOutput3 === targetOutput3,
+  "current output: %s, target output: %s",
+  currentOutput3,
+  targetOutput3
 
 // formatAs12HourClock currently has a 🐛
 
